@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { MenuData } from '../data/MenuData';
 
 const Nav = styled.nav`
     height: 60px;
-    background: red;
+    display: flex;
+    background: #000;
 `;
 
 const Logo = styled(Link)`
@@ -15,13 +17,22 @@ const MenuBars = styled.i``
 
 const NavMenu = styled.div``
 
+const NavMenuLinks = styled(Link)`
+  color: #fff;
+`;
+
 const Navbar = () => {
   return (
     <Nav>
-        <Logo>LOGO</Logo>
+        <Logo to="/">LOGO</Logo>
         <MenuBars />
-        <NavMenu />
-        <h1>navbar</h1>
+        <NavMenu>
+          {MenuData.map((item, index) => (
+            <NavMenuLinks to={item.link} key={index}>
+              {item.title}
+            </NavMenuLinks>
+          ))}
+        </NavMenu>
     </Nav>
   )
 }
