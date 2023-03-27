@@ -12,6 +12,7 @@ const Logo = styled(Link)`
 `;
 
 const MenuBars = styled.i``
+
 const NavMenu = styled.div``
 
 const Navbar = () => {
