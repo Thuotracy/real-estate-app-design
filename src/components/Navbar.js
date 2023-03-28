@@ -1,36 +1,36 @@
-import React from 'react';
-import styled, { css } from 'styled-components/macro';
-import { Link } from 'react-router-dom';
-import { MenuData } from '../data/MenuData';
-import { Button } from './Button';
+import React from "react";
+import styled, { css } from "styled-components/macro";
+import { Link } from "react-router-dom";
+import { menuData } from "../data/MenuData";
+import { Button } from "./Button";
 
 const Nav = styled.nav`
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    z-index: 100;
-    position: fixed;
-    width: 100%;
-    background: #red;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  background: #red;
 `;
 
 const NavLink = css`
-   color: #fff;
-   display:flex;
-   align-items: center;
-   padding: 0 1rem;
-   height: 100%;
-   cursor: pointer;
-   text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
 `;
 
 const Logo = styled(Link)`
-    ${NavLink}
-    font-style: italic;
+  ${NavLink}
+  font-style: italic;
 `;
 
-const MenuBars = styled.i``
+const MenuBars = styled.i``;
 
 const NavMenu = styled.div`
   display: flex;
@@ -50,21 +50,25 @@ const NavBtn = styled.div`
 const Navbar = () => {
   return (
     <Nav>
-        <Logo to="/">LOGO</Logo>
-        <MenuBars />
-        <NavMenu>
-          {MenuData.map((item, index) => (
-            <NavMenuLinks to={item.link} key={index}>
-              {item.title}
-            </NavMenuLinks>
-          ))}
-        </NavMenu>
+      <Logo to="/">LOGO</Logo>
+      <MenuBars />
 
-        <NavBtn>
-          <Button to='/contact'>Contact Us</Button>
-        </NavBtn>
+      <NavMenu>
+        {menuData.map((item, index) => (
+          <NavMenuLinks to={item.link} key={index}>
+            {item.title}
+          </NavMenuLinks>
+        ))}
+      </NavMenu>
+
+      <NavBtn>
+        <Button to="/contact" primary="true">
+          Contact Us
+        </Button>
+      </NavBtn>
+
     </Nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
