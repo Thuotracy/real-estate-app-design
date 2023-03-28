@@ -1,4 +1,4 @@
-import Navbar from "./components/Navbar";
+import Navbar from "./components/CountryDropdown";
 import GlobalStyle from "./globalStyles";
 
 function App() {
