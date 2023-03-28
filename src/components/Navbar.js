@@ -30,12 +30,18 @@ const Logo = styled(Link)`
   font-style: italic;
 `;
 
-const MenuBars = styled.i``;
+const MenuBars = styled.i`
+  display: none;
+`;
 
 const NavMenu = styled.div`
   display: flex;
   align-items: center;
   margin-right: -40px;
+
+  @media screen and (max-width: 760px){
+    display: none;
+  }
 `;
 
 const NavMenuLinks = styled(Link)`
