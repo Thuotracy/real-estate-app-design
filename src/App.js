@@ -1,11 +1,7 @@
-import Navbar from "./components/CountryDropdown";
+import React from 'react'
 
-function App() {
-  return (
-    <>
-      <Navbar />
-    </>
-  );
-}
+const App = () => {
+  return <div>react app</div>;
+};
 
 export default App;
