@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 // import components
 import CountryDropdown from './CountryDropdown';
@@ -7,6 +7,9 @@ import PriceRangeDropdown from './PrinceRangeDropdown';
 
 // import icons
 import { RiSearch2Line } from 'react-icons/ri';
+
+// import context
+import { HouseContext } from './HouseContext';
 
 const Search = () => {
   return (
