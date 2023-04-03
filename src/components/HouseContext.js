@@ -38,7 +38,7 @@ const HouseContextProvider = ({children}) => {
     });
   
     // remove duplicate properties
-    const uniqueProperties = ['Location (any)',...
+    const uniqueProperties = ['Property (any)',...
     new Set(allProperties)]
   
     // set properties state
