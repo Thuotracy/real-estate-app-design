@@ -13,8 +13,9 @@ import { link } from 'react-router-dom';
 import { ImSpinner2 } from 'react-icons/im';
 
 const HouseList = () => {
-  const {} = useContext(HouseContext);
-  return <div>HouseList</div>;
+  const { houses, loading } = useContext(HouseContext);
+  console.log(houses);
+  return <div>Hello</div>;
 };
 
 export default HouseList;

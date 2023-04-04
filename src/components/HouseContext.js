@@ -46,6 +46,9 @@ const HouseContextProvider = ({children}) => {
   }, []);
 
 
+  const handleClick = () => {
+    console.log('clicked')
+  }
 
   return <HouseContext.Provider 
     value={{
@@ -59,7 +62,8 @@ const HouseContextProvider = ({children}) => {
       price,
       setPrice,
       houses,
-      loading
+      loading,
+      handleClick
     }}>
     {children}
   </HouseContext.Provider>
