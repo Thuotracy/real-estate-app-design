@@ -47,8 +47,12 @@ const HouseContextProvider = ({children}) => {
 
 
   const handleClick = () => {
-    console.log('clicked')
-  }
+    // function that checks if the string includes (any)
+    const isDefault = (str) => {
+      return str.split(' ').includes('(any)');
+    };
+    console.log(isDefault(country));
+  };
 
   return <HouseContext.Provider 
     value={{
