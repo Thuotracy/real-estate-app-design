@@ -23,7 +23,7 @@ const HouseContextProvider = ({children}) => {
 
     // remove duplicate countries
     const uniqueCountries = ['Location (any)',...
-    new Set(allCountries)]
+    new Set(allCountries)];
 
     // set countries state
     setCountries(uniqueCountries);
