@@ -53,6 +53,7 @@ const HouseContextProvider = ({children}) => {
       setCountry,
       countries,
       property,
+      setProperty,
       setProperties,
       properties,
       price,
