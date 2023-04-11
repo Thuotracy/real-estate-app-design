@@ -91,9 +91,10 @@ const PropertyDetails = () => {
               outline-none rounded w-full px-4 h-14 text-sm' type='text' placeholder='Email*'/>
               <input className='border border-gray-300 focus:border-violet-700 
               outline-none rounded w-full px-4 h-14 text-sm' type='text'placeholder='Phone*'/>
-              <textarea></textarea>
+              <textarea className='border border-gray-300 focus:border-violet-700 outline-none
+              resize-none rounded w-full p-4 h-36 text-sm' placeholder='Message*'></textarea>
               <div>
-                <button>Send Message</button>
+                <button className='bg-violet-700 hover:bg-violet-800 text-white rounded p-4 text-am w-full transition'>Send Message</button>
                 <button>Make Phonecall</button>
               </div>
             </form>
