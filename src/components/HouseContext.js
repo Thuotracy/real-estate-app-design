@@ -121,7 +121,7 @@ const HouseContextProvider = ({children}) => {
       return newHouses.length < 1 ? setHouses([]) : 
       setHouses(newHouses);
       setLoading(false);
-    });
+    }, 1000);
   };
 
   return <HouseContext.Provider 
@@ -137,8 +137,9 @@ const HouseContextProvider = ({children}) => {
       setPrice,
       houses,
       loading,
-      setLoading,
-      handleClick
+      // setLoading,
+      handleClick,
+      loading
     }}>
     {children}
   </HouseContext.Provider>
