@@ -37,8 +37,14 @@ const PropertyDetails = () => {
         <div className='text-3x1 font-semibold text-violet-500'>$ {house.price}</div>
       </div>
 
-      <div></div>
-      
+      <div>
+        <div>
+          <div>
+            <img src={house.imageLg} alt="" />
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>;
 };
