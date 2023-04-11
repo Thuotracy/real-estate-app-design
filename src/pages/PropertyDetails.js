@@ -43,29 +43,52 @@ const PropertyDetails = () => {
             <img src={house.imageLg} alt="" />
           </div>
 
-          <div>
-            <div>
+          <div className='flex gap-x-6 text-gray-500 mb-6'>
+            <div className='flex gap-x-2 items-center'>
               <BiBed className='text-2x1'/>
               <div>{house.bedrooms}</div>
             </div>
 
-            <div>
+            <div className='flex gap-x-2 items-center'>
               <BiBath className='text-2x1'/>
               <div>{house.bathrooms}</div>
             </div>
 
-            <div>
+            <div className='flex gap-x-2 items-center'>
               <BiArea className='text-2x1'/>
               <div>{house.surface}</div>
             </div>
 
           </div>
 
-          <div>
-            
-          </div>
+          <div>{house.description}</div>
 
         </div>
+
+        <div className='flex-1 bg-white w-full mb-8
+        border border-gray-300 rounded-lg px-6 py-8'>
+          <div className='flex items-center gap-x-4 mb-8'>
+
+            <div className='w-20 h-20 p-1 border border-gray-300
+            rounded-full'>
+              <img src={house.agent.image} alt=""/>
+            </div>
+
+            <div className='flex items-center gap-x-4 mb-8'>
+              <div>{house.agent.name}</div>
+              <Link to='' className='text-violet-700 text-sm'>View Listings</Link>
+            </div>
+
+            {/* form */}
+            <form>
+              <input type='text'/>
+              <input type='text'/>
+              <input type='text'/>
+            </form>
+
+          </div>
+        </div>
+
       </div>
 
     </div>
