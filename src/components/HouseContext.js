@@ -83,9 +83,16 @@ const HouseContextProvider = ({children}) => {
         return house.country === country;
       }
 
-       // if property is not default
-       if (!isDefault(country) && isDefault(property) && isDefault(price)){
-        return house.country === country;
+      // if property is not default
+      if (!isDefault(property) && isDefault(country) && isDefault(price)){
+        return house.type === property;
+      }
+
+       // if price is not default
+       if (!isDefault(price) && isDefault(country) && isDefault(property)){
+        if(housePrice >= minPrice && housePrice <= maxPrice){
+          return house;
+        }
       }
     });
     console.log(newHouses);
