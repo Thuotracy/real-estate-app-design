@@ -58,6 +58,7 @@ const HouseContextProvider = ({children}) => {
     // get second value of price which is the maximum price and parse it to number
     const maxPrice = parseInt(price.split(' ')[2]);
 
+
     const newHouses = housesData.filter((house) => {
       const housePrice = parseInt(house.price);
 
@@ -79,6 +80,11 @@ const HouseContextProvider = ({children}) => {
 
       // if country is not default
       if (!isDefault(country) && isDefault(property) && isDefault(price)){
+        return house.country === country;
+      }
+
+       // if property is not default
+       if (!isDefault(country) && isDefault(property) && isDefault(price)){
         return house.country === country;
       }
     });
