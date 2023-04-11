@@ -13,7 +13,7 @@ const HouseContextProvider = ({children}) => {
   const [property, setProperty] = useState('Property type(any)');
   const [properties, setProperties] = useState([]);
   const [price, setPrice] = useState('Price range (any)');
-  const [loading, Loading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   // return all countries
   useEffect(() => {
@@ -47,6 +47,8 @@ const HouseContextProvider = ({children}) => {
 
 
   const handleClick = () => {
+    // set loading
+    setLoading(true);
     // function that checks if the string includes (any)
     const isDefault = (str) => {
       return str.split(' ').includes('(any)');
@@ -106,8 +108,20 @@ const HouseContextProvider = ({children}) => {
           return house.country === country;
         }
       }
+
+        // if country, property and price is not default
+        if (!isDefault(country) && !isDefault(property) && !isDefault(price)){
+          if(housePrice >= minPrice && housePrice <= maxPrice){
+            return house.type === property;
+          }
+        }
     });
-    console.log(newHouses);
+    
+    setTimeout(() => {
+      return newHouses.length < 1 ? setHouses([]) : 
+      setHouses(newHouses);
+      setLoading(false);
+    });
   };
 
   return <HouseContext.Provider 
@@ -123,6 +137,7 @@ const HouseContextProvider = ({children}) => {
       setPrice,
       houses,
       loading,
+      setLoading,
       handleClick
     }}>
     {children}
