@@ -37,11 +37,34 @@ const PropertyDetails = () => {
         <div className='text-3x1 font-semibold text-violet-500'>$ {house.price}</div>
       </div>
 
-      <div>
-        <div>
-          <div>
+      <div className='flex flex-col lg:items-start gap-8 lg:flex-row'>
+        <div className='max-w-[768px]'>
+          <div className='mb-8'>
             <img src={house.imageLg} alt="" />
           </div>
+
+          <div>
+            <div>
+              <BiBed className='text-2x1'/>
+              <div>{house.bedrooms}</div>
+            </div>
+
+            <div>
+              <BiBath className='text-2x1'/>
+              <div>{house.bathrooms}</div>
+            </div>
+
+            <div>
+              <BiArea className='text-2x1'/>
+              <div>{house.surface}</div>
+            </div>
+
+          </div>
+
+          <div>
+            
+          </div>
+
         </div>
       </div>
 
