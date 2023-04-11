@@ -74,24 +74,29 @@ const PropertyDetails = () => {
               <img src={house.agent.image} alt=""/>
             </div>
 
-            <div className='flex items-center gap-x-4 mb-8'>
+            <div className='items-center gap-x-4 mb-8'>
               <div>{house.agent.name}</div>
               <Link to='' className='text-violet-700 text-sm'>View Listings</Link>
             </div>
 
+          
+
+          </div>
+
             {/* form */}
             <form>
-              <input type='text'/>
-              <input type='text'/>
-              <input type='text'/>
+              <input className='border border-gray-300 focus:border-violet-700 
+              outline-none rounded w-full px-4 h-14 text-sm' type='text' placeholder='Name*'/>
+              <input className='border border-gray-300 focus:border-violet-700 
+              outline-none rounded w-full px-4 h-14 text-sm' type='text' placeholder='Email*'/>
+              <input className='border border-gray-300 focus:border-violet-700 
+              outline-none rounded w-full px-4 h-14 text-sm' type='text'placeholder='Phone*'/>
               <textarea></textarea>
               <div>
                 <button>Send Message</button>
                 <button>Make Phonecall</button>
               </div>
             </form>
-
-          </div>
         </div>
 
       </div>
