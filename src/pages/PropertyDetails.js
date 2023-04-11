@@ -22,11 +22,14 @@ const PropertyDetails = () => {
 
   return <section>
     <div className='container mx-auto min-h-[800px] mb-14'>
+
+      <div>
         <div>
-          <div>
-            <h2>{house.name}</h2>
-          </div>
+          <h2>{house.name}</h2>
+          <h3>{house.address}</h3>
         </div>
+      </div>
+
     </div>
   </section>;
 };
