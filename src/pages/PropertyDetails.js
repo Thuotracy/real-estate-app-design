@@ -84,6 +84,11 @@ const PropertyDetails = () => {
               <input type='text'/>
               <input type='text'/>
               <input type='text'/>
+              <textarea></textarea>
+              <div>
+                <button>Send Message</button>
+                <button>Make Phonecall</button>
+              </div>
             </form>
 
           </div>
