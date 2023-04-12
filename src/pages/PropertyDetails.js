@@ -34,7 +34,7 @@ const PropertyDetails = () => {
           <div className='bg-red-500 text-white px-3 rounded-full'>{house.country}</div>
         </div>
 
-        <div className='text-3x1 font-semibold text-red-500'>$ {house.price}</div>
+        <div className='text-3x1 font-semibold text-red-500'>{house.price}</div>
       </div>
 
       <div className='flex flex-col lg:items-start gap-8 lg:flex-row'>
