@@ -18,7 +18,7 @@ const HouseList = () => {
   // if loading is true
   if (loading) {
     return(<ImSpinner2 className='mx-auto
-    animate-spin text-violet-700 text-4x1 mt-[200px]'/>);
+    animate-spin text-red-700 text-4x1 mt-[200px]'/>);
   }
 
   if (houses.length < 1) {

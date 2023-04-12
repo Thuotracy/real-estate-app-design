@@ -11,8 +11,8 @@ const House = ({ house }) => {
     <img className='mb-8' src={image} alt=""/>
 
     <div className='mb-4 flex gap-x-2 text-sm'>
-      <div className='bg-green-500 rounded-full text-white px-3'>{type}</div>
-      <div className='bg-violet-500 rounded-full text-white px-3'>{country}</div>
+      <div className='bg-blue-500 rounded-full text-white px-3'>{type}</div>
+      <div className='bg-red-500 rounded-full text-white px-3'>{country}</div>
     </div>
 
     <div className='text-lg font-semibold max-w-[260px]'>{address}</div>
@@ -41,7 +41,7 @@ const House = ({ house }) => {
 
     </div>
     
-    <div className='text-lg fotn-semibold text-violet-600 mb-4'>{price}</div>
+    <div className='text-lg fotn-semibold text-red-600 mb-4'>{price}</div>
 
   </div>
   
