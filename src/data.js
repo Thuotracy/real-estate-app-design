@@ -258,7 +258,7 @@ export const housesData = [
     bathrooms: '3',
     surface: '3200 sq ft',
     year: '2017',
-    price: '$ 117,000',
+    price: '$ 345,000',
     agent: {
       image: Agent10,
       name: 'Vera Levesque',
@@ -279,7 +279,7 @@ export const housesData = [
     bathrooms: '4',
     surface: '3600 sq ft',
     year: '2019',
-    price: '$ 175,000',
+    price: '$ 635,000',
     agent: {
       image: Agent11,
       name: 'Sofia Gomes',
