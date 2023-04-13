@@ -367,7 +367,7 @@ export const housesData = [
     agent: {
       image: Agent3,
       name: 'Amado Smith',
-      phone: '0123 456 78910',
+      phone: '0712345678',
     },
   },
   {
@@ -379,16 +379,16 @@ export const housesData = [
     image: Apartment4,
     imageLg: Apartment4Lg,
     country: 'Mombasa',
-    address: '32 Pawnee Street Butte, MT 59701',
+    address: 'Diani',
     bedrooms: '2',
     bathrooms: '1',
     surface: '1300 sq ft',
-    year: '2011',
-    price: '21000',
+    year: '2022',
+    price: '$ 199,000',
     agent: {
       image: Agent4,
       name: 'Kaitlyn Gonzalez',
-      phone: '0123 456 78910',
+      phone: '0712345678',
     },
   },
   {
