@@ -148,7 +148,7 @@ export const housesData = [
     image: House5,
     imageLg: House5Lg,
     country: 'Nairobi',
-    address: 'Lavinton',
+    address: 'Lavington',
     bedrooms: '5',
     bathrooms: '5',
     surface: '4200 sq ft',
